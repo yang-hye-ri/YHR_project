@@ -1,0 +1,123 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	background: #000000;
+	font-family:sans-serif;
+}
+
+li {
+	list-style:none;
+}
+
+
+.form-box {
+	background-color: #000;
+	padding: 40px;
+	max-width: 600px;
+	margin: 40px auto;
+	
+}
+
+.tab-group {
+	margin: 0 0 40px 0;
+}
+.tab-group::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.tab-group li a {
+	display: block;
+	padding: 15px;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.tab-group .active a {
+	background: #1ab188;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+label {
+	pointer-events: none;
+	position: absolute;
+	left:13px;
+	color: #808080;
+	font-size: 22px;
+}
+label .req {
+	margin: 2px;
+	color: #c30000;
+}
+
+input, textarea {
+	font-size: 22px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px 10px;
+	background: none; 
+	border: 1px solid #a0b3b0;
+	color: #fff;
+	border-radius: 0;
+	
+}
+input:focus, textarea:focus {
+	outline: 0;
+	border-color: #c30000;
+}
+textarea {
+	border: 2px solid #a0b3b0;
+	resize: vertical;
+}
+.field-wrap {
+	position: relative;
+	margin-bottom: 40px;
+}
+.top-row::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.top-row > div:last-child {
+	margin: 0;
+}
+.button {
+	padding: 15px 0;
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #232323;
+	color: #fff;
+}
+.button:hover, .button:focus {
+	background: #c30000;
+	cursor: pointer;
+}
+.button-block {
+	display: block;
+	width: 100%;
+}
+.forgot {
+	margin: -20px 0 20px;
+	text-align: right;
+}

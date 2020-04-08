@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class viewController2 {
+public class viewController {
 	
 	
 	@RequestMapping(value = "/main", method = RequestMethod.GET)
@@ -24,6 +24,18 @@ public class viewController2 {
 	public String mainMap() {
 		return "mainMap";
 	}
+	
+	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	public String signup() {
+		return "signup";
+	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login() {
+		return "login";
+	}
+	
+	
 	
 	
 	
