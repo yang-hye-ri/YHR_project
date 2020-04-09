@@ -1,11 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel = "stylesheet" href = "/resources/css/signup.css">
-<title>sign up</title>
 </head>
 <body>
 <!-- form -->
@@ -43,10 +41,6 @@
 		
 	</div>
 	
-	
 </div>
-
-  
-
 </body>
 </html>

@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <link rel = "stylesheet" href = "/resources/css/mainMap.css">
-<title>Insert title here</title>
+<title>mainMap</title>
 </head>
 <body>
-
+	<div class="mainMap_div"></div>
+	
 </body>
 </html>

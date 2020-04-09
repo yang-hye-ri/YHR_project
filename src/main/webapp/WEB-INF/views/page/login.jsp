@@ -1,18 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel = "stylesheet" href = "/resources/css/login.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<title>login</title>
-<script>
-	$(document).ready(function()){
-		
-		
-	});
-</script>
 </head>
 <body>
 	
@@ -42,7 +33,6 @@
 		</div>  
 		
 	</div>
-	
 	
 </div>
 

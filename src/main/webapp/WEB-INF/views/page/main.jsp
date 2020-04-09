@@ -8,22 +8,17 @@
 <title>main</title>
 </head>
 <body>
-	<header> 
+	<div class="top"> 
 		<h1 class="title">YangHyeRi project</h1> 
-	</header>
+	</div>
 	<div class="text middle" data-text="Looking at you">
 		Looking at you
 	</div>
-	
-	
 	<div id="container">
 	  	<p></p>
 		<p><a href="/mainMap">
 	    start...
 	  	</a></p>
 	</div>
-
-
-
 </body>
 </html>
