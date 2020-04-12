@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.logo {
+	background-image : url('/resources/img/logo.png');
+	background-repeat : no-repeat;
+	background-size : cover;
+	width: 400px;
+    height: 120px;
+    margin: auto;
+}
+
+
+.navi {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	float: left;
+    margin: 45px 20px 30px 30px;
+}

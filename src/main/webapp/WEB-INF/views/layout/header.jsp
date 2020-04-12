@@ -7,7 +7,7 @@
 
 <body>
 	<div class="navi">nav</div>
-	<div class="logo"><h1 style="margin: 0; color: #c30000; font-size: 5rem; text-align: center;" >LOGO</h1></div>
+	<div class="logo"></div>
 	
 	
 	

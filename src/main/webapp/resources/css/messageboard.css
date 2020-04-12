@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.messageboard_div {
+	width: 1000px;
+	min-height: calc((100vh - 300px));
+    margin: 0 calc((100% - 1000px) / 2);
+    background-color: #000;
+    border-top: solid 2px #c30000;
+}
+
+.messageboard_Contents {
+	min-height: 500px;
+    border-bottom: solid 2px #c30000;
+    border-top: solid 2px #c30000;
+}
+
+.messageboard_btn {
+	color: #fff;
+	background-color: #000;
+	outline: 0;
+	border: solid 1px #fff;
+	padding: 10px 30px;
+}
+
+.messageboard_btn:hover {
+	color: #fff;
+	background-color: #c30000;
+	cursor: pointer;
+}
+
+.b_img {
+	background-image: url('/resources/img/heart1.png');
+	background-repeat : no-repeat;
+	background-size : cover;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.b_img:hover {
+	background-image: url('/resources/img/heart2.png');
+	background-repeat : no-repeat;
+	background-size : cover;
+	width: 20px;
+    height: 20px;
+}
+.messageboard_btn_div {
+	text-align: center;
+	padding: 30px;
+}
