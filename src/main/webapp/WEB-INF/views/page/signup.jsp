@@ -10,6 +10,7 @@
 <div class="form-box">
 	
 	<div class="tab-content">
+		<div class="signup_img"></div>
 		<div id="signup">
 			<h1>Sign Up</h1>
 			

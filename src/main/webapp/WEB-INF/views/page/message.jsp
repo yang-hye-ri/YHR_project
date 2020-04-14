@@ -30,7 +30,9 @@
 	
 	<div class="message_div2">
 		<h3 style="color: #fff;">전체 게시글 보기</h3>
-		<div style="height: 50px; background-color: #2e2e2e;">
+		
+		
+		<div style="height: 40px; background-color: #1f1f1f;border-bottom: solid 1px #c30000;border-top: solid 1px #c30000;">
 				<div class="li_m_1">제목</div>
 				<div class="li_m_2">작성자</div>
 				<div class="li_m_3">날짜</div>
@@ -55,10 +57,25 @@
 				<li class="li_m_3">04.28</li>
 				<li class="li_m_3">100</li>
 			</ul>
-		</form>
+		</form> 
 	</div>
+	<div class="paging">
+		<a href="#" class="direction fisrt"><span>처음</span></a>
+		<a href="#" class="direction prev"><span>이전</span></a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<strong>5</strong>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#" class="direction next"><span>다음</span></a>
+		<a href="#" class="direction last"><span>끝</span></a>
+	</div><!-- //paging -->
 	<div class="message_btn_div">
-		<button type="button" onclick="location.href = '/messageeditor'" class="message_btn">글쓰기</button>
+		<button type="button" onclick="location.href = '/messageeditor'" class="message_btn">작성하기</button>
 	</div>
 </div>	
 

@@ -12,6 +12,7 @@
 	min-height: 500px;
     border-bottom: solid 2px #c30000;
     border-top: solid 2px #c30000;
+    background-color: #fff;
 }
 
 .messageboard_btn {
@@ -46,5 +47,19 @@
 }
 .messageboard_btn_div {
 	text-align: center;
-	padding: 30px;
+	padding: 50px;
+}
+
+
+.messageBoard_startbtn {
+	color: #fff;
+	background-color: #610000;
+	outline: 0;
+	border: solid 1px #fff;
+	padding: 10px 30px;
+}
+
+.messageBoard_startbtn:hover {
+	background-color: #c30000;
+	cursor: pointer;
 }

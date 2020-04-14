@@ -18,3 +18,20 @@
 	text-align: center;
 	padding: 30px;
 }
+
+.messageE_div {
+	width: 1000px;
+	min-height: calc((100vh - 300px));
+    margin: 0 calc((100% - 1000px) / 2);
+    background-color: #000;
+}
+
+input {width: -webkit-fill-available;
+    height: 30px;
+    background-color: #000;
+    border: solid 2px #c30000;
+    color: #fff;
+    outline: 0;
+    padding-left: 10px;
+}
+

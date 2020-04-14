@@ -10,7 +10,7 @@
 <div class="form-box">
 	
 	<div class="tab-content">
-		
+		<div class="login_img"></div>
 		 <div id="login">
 			<h1>Welcome Back!</h1>
 			

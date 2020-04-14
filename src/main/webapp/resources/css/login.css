@@ -118,3 +118,13 @@ textarea {
 	margin: -20px 0 20px;
 	text-align: right;
 }
+
+.login_img {
+	background-image : url('/resources/img/logo.png');
+	background-repeat : no-repeat;
+	background-size : cover;
+	width: 500px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+}
