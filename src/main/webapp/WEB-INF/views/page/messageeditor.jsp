@@ -7,7 +7,7 @@
 <link rel = "stylesheet" href = "/resources/css/mainMap.css">
 <link rel = "stylesheet" href = "/resources/css/messageeditor.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src = "/ckeditor/ckeditor.js"></script>
+<script src = "/resources/lib/ckeditor/ckeditor.js"></script>
 <title>messageEditor</title>
 </head>
 <body>
