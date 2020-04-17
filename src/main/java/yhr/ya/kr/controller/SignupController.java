@@ -16,7 +16,7 @@ public class SignupController {
 	@Autowired private SignupService signupService;
 	
 	@RequestMapping(value="/signup", method=RequestMethod.POST)
-	public @ResponseBody UserBean setUser(UserBean ub) {
+	public @ResponseBody int setUser(UserBean ub) {
 		System.out.println(ub);
 		return signupService.setUser(ub);
 	}

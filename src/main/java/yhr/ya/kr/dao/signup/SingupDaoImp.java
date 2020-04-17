@@ -11,11 +11,15 @@ import yhr.ya.kr.bean.UserBean;
 public class SingupDaoImp implements SignupDao {
 	
 	@Autowired 
-	SqlSession sqlSession;
+	SqlSession session;
 	
 	@Override
-	public UserBean setUser(UserBean ub) {
-		return null;
+	public int setUser(UserBean ub) {
+		System.out.println(ub);
+		return session.insert("signup.setUser", ub);
 	}
+	
+	
+	
 
 }

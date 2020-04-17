@@ -13,7 +13,7 @@ public class SignupServiceImp implements SignupService {
 	@Autowired private SignupDao signupDao;
 	
 	@Override
-	public UserBean setUser(UserBean ub) {
+	public int setUser(UserBean ub) {
 		return signupDao.setUser(ub);
 	}
 

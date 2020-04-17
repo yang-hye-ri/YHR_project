@@ -16,7 +16,7 @@
 		<div id="signup">
 			<h1>Sign Up</h1>
 			
-			<!-- <form action="/login" method="post"> -->
+			<form action="/signup" method="post" id="formsignup"> 
 				
 				<div class="top-row">
 					<div class="field-wrap">
@@ -38,7 +38,7 @@
 				
 				<button type="submit" class="button button-block">Get Started</button>
 				
-			<!-- </form> -->
+			</form> 
 			
 		</div>
 		

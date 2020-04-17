@@ -4,6 +4,6 @@ import yhr.ya.kr.bean.UserBean;
 
 public interface SignupDao {
 
-	public UserBean setUser(UserBean ub);
+	public int setUser(UserBean ub);
 
 }

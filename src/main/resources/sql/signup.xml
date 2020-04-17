@@ -4,11 +4,11 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="signup">
   
-	<insert id="signup">
+	<insert id="setUser" parameterType="yhr.ya.kr.bean.UserBean">
 		INSERT INTO User
-			(id, pwd, email, u_delYN, u_manager, u_date)
+			(id, pwd, email)
 		 VALUES
-			(#{id},#{pwd},#{email},#{u_delYN},#{u_manager},#{u_date});
+			(#{id},#{pwd},#{email});
 	</insert>
   
  </mapper>
