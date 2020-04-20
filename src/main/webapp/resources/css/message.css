@@ -72,6 +72,11 @@
 	margin: 0;
 }
 
+.message_ul:after {
+	display: table;
+	content: "";
+	clear: both;
+}
 .message_ul:hover {
 	cursor: pointer;
 }

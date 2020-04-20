@@ -25,7 +25,7 @@
 	</div>
 	<div style="text-align: center; padding-bottom: 100px;">
 		<button type="button" onclick="location.href = '/messageeditor'" class="messageBoard_startbtn">작성하기</button>
-		<button type="button" onclick="location.href = '/messageeditor'" class="messageBoard_startbtn">수정하기</button>
+		<button type="button" onclick="location.href = '/messageeditor'" class="messageBoard_startbtn">삭제하기</button>
 	</div>
 </div>
 </body>

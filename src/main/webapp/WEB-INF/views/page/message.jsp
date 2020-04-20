@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type = "text/javascript" src = "/resources/js/message.js"></script>	
 <link rel = "stylesheet" href = "/resources/css/mainMap.css">
 <link rel = "stylesheet" href = "/resources/css/message.css">
 <title>Insert title here</title>
@@ -38,25 +40,27 @@
 				<div class="li_m_3">날짜</div>
 				<div class="li_m_3">추천수</div>
 		</div>
-		<form action="/messageboard">
-			<ul class="message_ul">
-				<li class="li_m_1">제목입니다</li>
-				<li class="li_m_2">작성자1</li>
-				<li class="li_m_3">04.28</li>
-				<li class="li_m_3">100</li>
-			</ul>
-			<ul class="message_ul">
-				<li class="li_m_1">제목입니다</li>
-				<li class="li_m_2">작성자2</li>
-				<li class="li_m_3">04.28</li>
-				<li class="li_m_3">100</li>
-			</ul>
-			<ul class="message_ul">
-				<li class="li_m_1">제목입니다</li>
-				<li class="li_m_2">작성자2</li>
-				<li class="li_m_3">04.28</li>
-				<li class="li_m_3">100</li>
-			</ul>
+		<form action="/messageboard" id="messagelist">
+			<div id="list">
+				<!-- <ul class="message_ul">
+					<li class="li_m_1">제목입니다</li>
+					<li class="li_m_2">작성자1</li>
+					<li class="li_m_3">04.28</li>
+					<li class="li_m_3">100</li>
+				</ul>
+				<ul class="message_ul">
+					<li class="li_m_1">제목입니다</li>
+					<li class="li_m_2">작성자2</li>
+					<li class="li_m_3">04.28</li>
+					<li class="li_m_3">100</li>
+				</ul>
+				<ul class="message_ul">
+					<li class="li_m_1">제목입니다</li>
+					<li class="li_m_2">작성자2</li>
+					<li class="li_m_3">04.28</li>
+					<li class="li_m_3">100</li>
+				</ul> -->
+			</div>
 		</form> 
 	</div>
 	<div class="paging">
