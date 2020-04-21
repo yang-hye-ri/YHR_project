@@ -8,6 +8,7 @@
 <link rel = "stylesheet" href = "/resources/css/messageeditor.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src = "/resources/lib/ckeditor/ckeditor.js"></script>
+<script type = "text/javascript" src = "/resources/js/messageeditor.js"></script>	
 <title>messageEditor</title>
 </head>
 <body>

@@ -56,6 +56,7 @@
                 </li>
             </ul>
 
+<c:if test="${User == null}">
             <ul class="logout">
                 <li>
                    <a href="/login">
@@ -66,6 +67,19 @@
                     </a>
                 </li>  
             </ul>
+ </c:if>
+ <c:if test="${User != null}">
+            <ul class="logout">
+                <li>
+                   <a href="/logout">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+ </c:if>
         </nav>
 	
 	

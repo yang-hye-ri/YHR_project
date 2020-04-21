@@ -19,13 +19,27 @@ public class LoginController {
 	
 	@Autowired private LoginService loginService;
 	
+	
 	@RequestMapping(value="/login", method=RequestMethod.POST)
-	public @ResponseBody UserBean getUser(UserBean ub) {
-		System.out.println(ub);
+	public @ResponseBody UserBean getUser(UserBean ub, HttpSession session) {
+		UserBean userBean = loginService.getUser(ub);  
+		session.setAttribute("User", userBean);
+	      if(userBean != null) {
+	         System.out.println(ub);
 		return loginService.getUser(ub);
 	}
-	
+	 return null;
+	}
 
+	
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	   public RedirectView removeUser(HttpSession session){
+	      session.invalidate();
+	      return new RedirectView("/mainmap");
+	   }
 	
 	
 }
+
+
+
