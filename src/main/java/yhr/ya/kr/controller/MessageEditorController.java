@@ -1,6 +1,6 @@
 package yhr.ya.kr.controller;
 
-import java.util.Map;
+
 
 import javax.servlet.http.HttpSession;
 
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import yhr.ya.kr.bean.MessageBean;
-import yhr.ya.kr.bean.UserBean;
 import yhr.ya.kr.service.messageEditor.MessageEditorService;
 
 @Controller
@@ -25,6 +24,5 @@ public class MessageEditorController {
 	         return messageEditorService.setMessage(MB);
 	      }
 
-	
 	
 }
