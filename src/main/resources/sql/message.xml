@@ -5,19 +5,47 @@
 <mapper namespace="message">
   
 	<select id="getMessage" resultType="Map" parameterType="Map">
-			SELECT M.no, M.m_user, M.m_delYN, 
+			SELECT M.no, M.m_user, U.id, M.m_delYN, 
 			 	 M.m_title, M.m_contents, DATE_FORMAT(M.m_date, '%Y-%m-%d ') AS m_date
 			FROM Message AS M
 			INNER JOIN User AS U
-				 ON (U.u_delYN = 'N'and M.no = U.no)
+				 ON (U.u_delYN = 'N' and M.m_user = U.no)
 				 where 1 = 1
 	</select>  
   		
   	<insert id="setMessage" parameterType="yhr.ya.kr.bean.MessageBean">
   			INSERT INTO Message
-			(m_user, m_title, m_contents)
+				(m_user, m_title, m_contents)
 		 		VALUES
-			(#{m_user},#{m_title},#{m_contents});
+				(#{m_user},#{m_title},#{m_contents});
   	</insert>	
+  	
+  	<select id="getMessageboard" resultType="Map" parameterType="Map">
+  			SELECT M.no, M.m_user, U.id, M.m_delYN, 
+			 	 M.m_title, M.m_contents, DATE_FORMAT(M.m_date, '%Y-%m-%d ') AS m_date
+			FROM Message AS M
+			INNER JOIN User AS U
+				 ON (U.u_delYN = 'N' and M.m_user = U.no)
+				 where M.no = #{no}
+  	</select>
+	
+	
+<!-- 	<select id="">
+			
+	</select>
+	
+	
+	<insert id="setMessageboard" parameterType="yhr.ya.kr.bean.MessageBean">
+  			INSERT INTO Nomination_Information 
+				(`Ms_no`, `Us_no`) 
+		 		VALUES
+				(#{Ms_no}, #{Us_no})
+  	</insert> -->
+  	
+  	
+  	<update id="">
+  	
+  	</update>	
+	 
 	
  </mapper>

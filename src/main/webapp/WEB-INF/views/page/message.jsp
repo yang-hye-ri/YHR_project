@@ -65,7 +65,7 @@
 			<button type="button" onclick="location.href = '/messageeditor'" class="message_btn">작성하기</button>
 		</c:if>
 		<c:if test="${User == null}">
-			<button type="button" onclick="alert('로그인 해주세요.');" class="message_btn">작성하기</button>
+			<button type="button" onclick="alert('로그인 해주세요.'); " class="message_btn">작성하기</button>
 		</c:if>
 	</div>
 </div>	

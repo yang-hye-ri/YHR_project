@@ -6,6 +6,6 @@ import yhr.ya.kr.bean.MessageBean;
 
 public interface MessageEditorService {
 
-	public int setMessage(MessageBean MB);
+	public Map<String, Object> setMessage(MessageBean MB);
 	
 }

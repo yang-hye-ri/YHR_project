@@ -10,9 +10,9 @@
 
 .messageboard_Contents {
 	min-height: 500px;
-    border-bottom: solid 2px #c30000;
+    /* border-bottom: solid 2px #c30000; */
     border-top: solid 2px #c30000;
-    background-color: #fff;
+    background-color: #fff; 
 }
 
 .messageboard_btn {
@@ -62,4 +62,11 @@
 .messageBoard_startbtn:hover {
 	background-color: #c30000;
 	cursor: pointer;
+}
+
+.board_content {
+    width: 994px;
+    margin: 0px;
+    min-height: 500px;
+    resize: none;
 }

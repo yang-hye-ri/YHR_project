@@ -15,8 +15,10 @@ public class MessageEditorServiceImp implements MessageEditorService {
 	@Autowired private MessageEditorDao messageEditorDao;
 
 	@Override
-	public int setMessage(MessageBean MB) {
-		return messageEditorDao.setMessage(MB);
+	public Map<String, Object> setMessage(MessageBean MB) {
+			Map<String, Object> ResultMap = new HashMap<String, Object>();
+			ResultMap.put("result", messageEditorDao.setMessage(MB));
+			return ResultMap;
 	}
 
 }

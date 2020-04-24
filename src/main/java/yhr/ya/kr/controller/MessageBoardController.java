@@ -2,7 +2,6 @@ package yhr.ya.kr.controller;
 
 import java.util.Map;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,24 +9,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-import yhr.ya.kr.service.message.MessageService;
+import yhr.ya.kr.service.messageboard.MessageboardService;
 
 @Controller
-public class MessageController {
-
+public class MessageBoardController {
 	
-	@Autowired private MessageService messageService;
+	@Autowired private MessageboardService messageboardService;
 	
-	@RequestMapping(value="/message", method=RequestMethod.POST)
-	public @ResponseBody  Map<String, Object> getMessage(@RequestParam Map<String, Object> paramMap) {
-//		System.out.println("controller :" + messageService.getMessage(paramMap));
-		return messageService.getMessage(paramMap);
+	@RequestMapping(value="/messageboard", method=RequestMethod.POST)
+	public @ResponseBody  Map<String, Object> messageboard(@RequestParam Map<String, Object> paramMap) {
+			System.out.println(paramMap);
+		return messageboardService.getMessageboard(paramMap);
 	}
-	
-	
-	
-	
-}
 
-	
+}
