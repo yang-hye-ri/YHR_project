@@ -29,7 +29,7 @@ $(document).ready(function() {
 	  });
   	
   	$("#messageboard_btn").click(function(e){
-
+  			
   		
   		
 //  		alert("추천하셨습니다.");
