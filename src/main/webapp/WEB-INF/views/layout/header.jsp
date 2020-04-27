@@ -12,7 +12,7 @@
             <ul>
                 <li>
                     <a href="/main">
-                        <i class="fa fa-home fa-2x"></i>
+                        <i class="fa fa-home fa-2x"><img src="/resources/img/home.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Home
                         </span>
@@ -21,7 +21,7 @@
                 </li>
                 <li class="has-subnav">
                     <a href="/mainmap">
-                        <i class="fa fa-laptop fa-2x"></i>
+                        <i class="fa fa-laptop fa-2x"><img src="/resources/img/map.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Map
                         </span>
@@ -30,7 +30,7 @@
                 </li>
                 <li class="has-subnav">
                     <a href="/gamemap">
-                       <i class="fa fa-list fa-2x"></i>
+                       <i class="fa fa-list fa-2x"><img src="/resources/img/game.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Game?
                         </span>
@@ -39,18 +39,9 @@
                 </li>
                 <li class="has-subnav">
                     <a href="/message">
-                       <i class="fa fa-folder-open fa-2x"></i>
+                       <i class="fa fa-folder-open fa-2x"><img src="/resources/img/message.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Notice Board
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="#">
-                       <i class="fa fa-info fa-2x"></i>
-                        <span class="nav-text">
-                            Documentation
                         </span>
                     </a>
                 </li>
@@ -60,7 +51,7 @@
             <ul class="logout">
                 <li>
                    <a href="/login">
-                         <i class="fa fa-power-off fa-2x"></i>
+                         <i class="fa fa-power-off fa-2x"><img src="/resources/img/login.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Login
                         </span>
@@ -72,7 +63,7 @@
             <ul class="logout">
                 <li>
                    <a href="/logout">
-                         <i class="fa fa-power-off fa-2x"></i>
+                         <i class="fa fa-power-off fa-2x"><img src="/resources/img/login.png" style="width: 25px; height: 25px;"></i>
                         <span class="nav-text">
                             Logout
                         </span>

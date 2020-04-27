@@ -30,21 +30,36 @@
   	</select>
 	
 	
-<!-- 	<select id="">
-			
+
+	<select id="getNomination" parameterType="yhr.ya.kr.bean.NominationBean" resultType="Map">
+			SELECT COUNT(*) as cnt, `N_delYN` FROM Nomination_Information WHERE `Ms_no` = #{Ms_no} AND `Us_no` = #{Us_no}
 	</select>
 	
-	
-	<insert id="setMessageboard" parameterType="yhr.ya.kr.bean.MessageBean">
+	<insert id="setNomination" parameterType="yhr.ya.kr.bean.NominationBean">
   			INSERT INTO Nomination_Information 
 				(`Ms_no`, `Us_no`) 
 		 		VALUES
 				(#{Ms_no}, #{Us_no})
-  	</insert> -->
+  	</insert> 
   	
+  	<update id="Nomination_del" parameterType="yhr.ya.kr.bean.NominationBean">
+  			UPDATE Nomination_Information 
+  			SET N_delYN = 'Y'
+  			WHERE `Ms_no` = #{Ms_no} 
+  			  AND `Us_no` = #{Us_no}
+  	</update>
   	
-  	<update id="">
+  	<update id="Nomination_up" parameterType="yhr.ya.kr.bean.NominationBean">
+  			UPDATE Nomination_Information 
+  			SET N_delYN = 'N'
+  			WHERE `Ms_no` = #{Ms_no} 
+  			  AND `Us_no` = #{Us_no}
+  	</update>
   	
+  
+  	<!-- 게시글 삭제 -->
+  	<update id="Messageboard_del" parameterType="yhr.ya.kr.bean.MessageBean">
+  		UPDATE Message SET `m_delYN` = 'Y' WHERE `no` = #{no} 
   	</update>	
 	 
 	

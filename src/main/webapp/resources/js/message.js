@@ -9,7 +9,8 @@ $(document).ready(function() {
 	      console.log(d);
 	      $("#messagelist").empty();
 	      for(var i = 0; i < data.length; i++){
-	         var html = ` 
+	    	  
+	    	  var html = ` 
 	                 	<ul class="message_ul" data-num="${data[i].no}">
 							<li class="li_m_1">${data[i].m_title}</li>
 							<li class="li_m_2">${data[i].id}</li>
@@ -17,7 +18,10 @@ $(document).ready(function() {
 							<li class="li_m_3">100</li>
 						</ul>
 	                  `;
-	         $("#messagelist").append(html);
+	    	  
+			 if(data[i].m_delYN == 'N') {
+				 $("#messagelist").append(html);
+			 } 
 	      }
 	      ClickEvent();
 	   });

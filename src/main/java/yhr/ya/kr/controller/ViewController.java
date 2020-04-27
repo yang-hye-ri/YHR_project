@@ -1,6 +1,7 @@
 package yhr.ya.kr.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,10 +22,19 @@ public class ViewController {
 	}
 	
 	@GetMapping("/{view}")
-	public String view(@PathVariable("view") String view, Model model, HttpServletRequest req) {
+	public String view(@PathVariable("view") String view, Model model, HttpServletRequest req, HttpSession session) {
 		if(pu.checkView(view, req)) {
 			return "redirect:/Main";
 		}
+		
+		// 로그인 여부 확인
+		if("messageeditor".toLowerCase().equals(view.toLowerCase())) {
+			Object obj = session.getAttribute("User");
+			if(obj == null) {
+				return "redirect:/login";
+			}
+		}
+		
 		model.addAttribute("title", view.toUpperCase());
 		model.addAttribute("page", view.toLowerCase());
 		return "layout";
