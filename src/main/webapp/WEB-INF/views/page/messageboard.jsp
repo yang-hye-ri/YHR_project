@@ -18,7 +18,7 @@
 		<div class="li_m_1" id="li_m_1" >제목</div>
 		<div class="li_m_2" id="li_m_2">작성자</div>
 		<div class="li_m_3" id="li_m_3">날짜</div>
-		<div class="li_m_3" id="li_m_4">추천수</div>
+	 	<div class="li_m_3" id="li_m_4">추천수</div> 
 	</div>
 	<div class="messageboard_Contents">
 		

@@ -23,10 +23,10 @@ $(document).ready(function() {
 		   console.log(d)
 		   result = d.result;
 		   console.log(result.m_title);
-		   $("#li_m_1").text(result.m_title);
+		   $("#li_m_1").text("제목 : " + result.m_title);
 		   $("#li_m_2").text(result.id);
-		   $("#li_m_3").text(result.m_date);
-		   $("#li_m_4").text(result.m_title); 
+		   $("#li_m_3").text(result.m_date2);
+		   $("#li_m_4").text("추천수  " + result.cnt); 
 		   $(".messageboard_Contents").html(result.m_contents);
 	  });
   	

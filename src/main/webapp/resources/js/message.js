@@ -14,8 +14,8 @@ $(document).ready(function() {
 	                 	<ul class="message_ul" data-num="${data[i].no}">
 							<li class="li_m_1">${data[i].m_title}</li>
 							<li class="li_m_2">${data[i].id}</li>
-							<li class="li_m_3">${data[i].m_date}</li>
-							<li class="li_m_3">100</li>
+							<li class="li_m_3">${data[i].m_date2}</li>
+							<li class="li_m_3">${data[i].cnt}</li>
 						</ul>
 	                  `;
 	    	  
