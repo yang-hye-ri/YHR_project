@@ -6,7 +6,7 @@
 
   
 	<select id="getMainMap"  parameterType="Map" resultType="Map">
-		SELECT * FROM M_Map WHERE `city_name` = '서울특별시 금천구' LIMIT 10
+		SELECT * FROM V_MAP
 	</select>
   
  </mapper>

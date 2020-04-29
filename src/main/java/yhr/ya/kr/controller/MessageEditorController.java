@@ -24,7 +24,7 @@ public class MessageEditorController {
 	@RequestMapping(value="/messageeditor", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> setMessage(MessageBean MB ,  HttpSession session) {
 		 System.out.println(MB);
-		 Object obj = session.getAttribute("User");   //user의 빈은 map으로 받아올 수 없음   
+		 Object obj = session.getAttribute("User");   
 	      if(obj != null) {
 	    	 UserBean ub = (UserBean) obj; 
 	    	 MB.setM_user(ub.getNo());
@@ -33,9 +33,5 @@ public class MessageEditorController {
 	      }
 	      return null;
 	}
-//		         System.out.println(MB);
-//	         return messageEditorService.setMessage(MB);
-//	      }
-		
 	
 }
